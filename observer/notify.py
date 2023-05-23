@@ -59,4 +59,7 @@ obj3 = ObservableConcreteClass(observable)
 observable.add_observer(obj1)
 observable.add_observer(obj2)
 observable.add_observer(obj3)
+observable.remove_observer(obj1)
+
+observable.notify()
 print("No of observers currently ",len(observable.observers))
